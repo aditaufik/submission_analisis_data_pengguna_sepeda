@@ -9,7 +9,10 @@ sns.set_theme(style="dark")
 # Function untuk memuat data
 @st.cache_data
 def load_data():
-    df = pd.read_csv("day.csv")
+    #file local
+    #df = pd.read_csv("day.csv")
+    #file github
+    df = pd.read_csv("Dashboard/day.csv")
     df['dteday'] = pd.to_datetime(df['dteday'])
     df = df[(df['dteday'] >= '2011-01-01') & (df['dteday'] <= '2012-12-31')]
     return df
