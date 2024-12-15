@@ -1,7 +1,7 @@
 # Analisis dan Visualisasi Penggunaan Sepeda
 
 ## Deskripsi Singkat
-Proyek ini bertujuan untuk menganalisis tren penggunaan sepeda berdasarkan dataset [Bike Sharing Dataset (Sumber)](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset) `day.csv`. Visualisasi data dibuat menggunakan **Streamlit**, **Matplotlib**, dan **Seaborn**.
+Proyek ini bertujuan untuk menganalisis tren penggunaan sepeda berdasarkan dataset [Bike Sharing Dataset (`day.csv`)](https://www.kaggle.com/datasets/lakshmi25npathi/bike-sharing-dataset). Visualisasi data dibuat menggunakan **Streamlit**, **Matplotlib**, dan **Seaborn**.
 
 ## Persyaratan dan Instalasi
 ```
