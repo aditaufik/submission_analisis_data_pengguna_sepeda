@@ -57,10 +57,14 @@ pengguna_harikerja = filtered_df.groupby(['yr', 'label_workingday'])['cnt'].sum(
 st.subheader("Perbandingan Penggunaan Sepeda pada Hari Kerja dan Hari Libur")
 fig, ax = plt.subplots(figsize=(8, 6))
 pengguna_harikerja.plot(kind='bar', ax=ax, color=['#ff9378', '#00b2ff'])
+
+# Perubahan label tahun
+ax.set_xticks(range(len(pengguna_harikerja.index)))
+ax.set_xticklabels(pengguna_harikerja.index.map(lambda x: str(2011 + x)), rotation=0, fontsize=10)
+
 ax.set_title(f"Perbandingan Penggunaan Sepeda pada Hari Kerja\n dan Hari Libur Berdasarkan Tahun ({pilih})", fontsize=14)
 ax.set_xlabel("Tahun", fontsize=12)
 ax.set_ylabel("Jumlah Pengguna Sepeda", fontsize=12)
-plt.xticks(rotation=0)
 st.pyplot(fig)
 
 # Visualissi Rata-rata Penggunaan Sepeda Tiap Bulan
